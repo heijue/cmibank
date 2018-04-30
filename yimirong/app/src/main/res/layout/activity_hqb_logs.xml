@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+    <include
+        android:id="@+id/activity_hqb_logs_title"
+        layout="@layout/title_bar"/>
+
+    <cn.app.yimirong.view.pull.PullToRefreshLayout
+        android:id="@+id/activity_khb_logs_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_hqb_logs_title">
+        <include layout="@layout/refresh_head" />
+        <cn.app.yimirong.view.pull.PullableExpandableListView
+            android:id="@+id/activity_khb_list_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:dividerHeight="0.67dp"
+            android:divider="@color/transparent"
+            android:childDivider="#ebebeb"
+            android:scrollbars="none"/>
+        <include layout="@layout/load_more" />
+    </cn.app.yimirong.view.pull.PullToRefreshLayout>
+    <RelativeLayout
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/kong1"
+            android:layout_centerInParent="true"
+            android:background="@drawable/kong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/kong1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="您还没有相关记录哦！"
+            />
+    </RelativeLayout>
+    <include
+        layout="@layout/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_hqb_logs_title"/>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/control_text_checked"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="@dimen/main_title_bar_padding_top">
+
+    <TextView
+        android:id="@+id/main_title_bar_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="@string/title_bar_title"
+        android:textColor="@drawable/selector_white_text"
+        android:textSize="@dimen/title_bar_title_text_size"/>
+
+    <RelativeLayout
+        android:id="@+id/notice_layout"
+        android:layout_width="44dp"
+        android:paddingRight="7dp"
+        android:paddingLeft="7dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/notice_buttom"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/xiaoxi"/>
+
+            <TextView
+                android:layout_below="@id/notice_buttom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="消息"
+                android:textSize="12sp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notice_number"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:visibility="gone"
+            android:background="@drawable/icon_yq_02"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/new_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

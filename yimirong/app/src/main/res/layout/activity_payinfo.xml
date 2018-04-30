@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/light_gray"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <TextView
+        android:id="@+id/activity_payinfo_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f7f7f7"
+        android:gravity="left|center_vertical"
+        android:padding="12dp"
+        android:textColor="#666666"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_payinfo_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/float_zero"
+                    android:textColor="@color/control_text_pressed"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收益计算日"
+                    android:textColor="@color/look_details_color"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="50dp"
+                android:background="#d0d0d0"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_payinfo_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/float_zero"
+                    android:textColor="@color/control_text_pressed"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到期时间"
+                    android:textColor="@color/look_details_color"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/light_gray"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天数"
+                android:textColor="#999999"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/activity_payinfo_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="12dp"
+            android:background="#dedede"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                android:id="@+id/textext"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/huan_kuan_way"
+                android:textColor="#999999"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textone"
+                android:layout_toRightOf="@id/textext"
+                android:layout_alignTop="@id/textext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/huankuan_triangle"
+                android:text="@string/payinfo"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.1"/>
+
+            <ImageView
+                android:id="@+id/img_ima"
+                android:src="@drawable/huankuan_triangle"
+                android:layout_below="@id/textone"
+                android:layout_alignLeft="@id/textone"
+                android:layout_marginTop="27dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_toRightOf="@id/img_ima"
+                android:layout_below="@id/textone"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="top"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/payinfo2"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

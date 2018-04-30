@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/selector_item">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/activity_gmjl_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textScaleX="1.1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/activity_gmjl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="left"
+            android:textColor="#797979"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_gmjl_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="#000000"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

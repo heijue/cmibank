@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:clipToPadding="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/activity_add_card_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/selector_mine"
+        android:clickable="true"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp">
+
+        <ImageView
+            android:id="@+id/activity_add_card_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image_content"
+            android:src="@drawable/tianjia" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/activity_add_card_icon"
+            android:gravity="center"
+            android:text="@string/add_bank_card"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image_content"
+            android:src="@drawable/jiantou_hui" />
+        mine
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color"/>
+
+</LinearLayout>

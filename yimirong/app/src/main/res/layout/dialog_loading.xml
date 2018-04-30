@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:background="@drawable/shape_loading_dialog_bg"
+                android:gravity="center">
+
+    <ImageView
+        android:id="@+id/dialog_loading_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        android:src="@drawable/jiazaizhong"
+        android:contentDescription="@string/image_content"/>
+
+    <!--<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/dialog_loading_bar" android:layout_alignBottom="@+id/dialog_loading_bar" android:layout_alignLeft="@+id/dialog_loading_bar" android:layout_alignRight="@+id/dialog_loading_bar" android:src="@drawable/zairutubiao_touming" android:scaleType="center" android:contentDescription="@string/image_content"/>-->
+
+    <TextView
+        android:id="@+id/dialog_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/dialog_loading_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/kuaidian_zhuan_qian_zhong"
+        android:layout_marginTop="6dp"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"/>
+
+</RelativeLayout>

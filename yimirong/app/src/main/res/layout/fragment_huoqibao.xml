@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:orientation="vertical">
+
+    <include layout="@layout/main_title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:background="@color/control_text_checked">
+
+                <LinearLayout
+                    android:id="@+id/fragment_huoqibao_zrsy_wrapper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="28dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="昨天收益"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fragment_huoqibao_zrsy_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="@string/float_zero"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/fragment_huoqibao_zrsy_wrapper"
+                    >
+
+                    <TextView
+                        android:id="@+id/fragment_huoqibao_yqnh_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="预期年化收益率"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fragment_huoqibao_yqnh_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/fragment_huoqibao_yqnh_title"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/float_zero"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jianbian" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginTop="9dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/zhuanchu_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zhuanchu"
+                    android:textColor="@color/fragment_item_tag_black"
+                    android:textSize="19dp" />
+
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:background="@color/control_text_checked" />
+
+
+                <TextView
+                    android:id="@+id/zhuanru_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zhuanru"
+                    android:textColor="@color/control_text_checked"
+                    android:textSize="19dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/bg_top_bottom_border"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_huoqibao_zzc_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/home_yue_selector"
+                    android:clickable="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:id="@+id/zzc_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text="总资产"
+                        android:textColor="@color/fragment_item_tag_black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fragment_huoqibao_zzc_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="32dp"
+                        android:layout_toRightOf="@id/zzc_text"
+                        android:singleLine="true"
+                        android:text="0.00"
+                        android:textColor="@color/control_text_checked"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/fragment_mine_invite_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/youjiantou" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#dedede" />
+
+                <RelativeLayout
+                    android:id="@+id/fragment_huoqibao_ljsy_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/home_yue_selector"
+                    android:clickable="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/leijishouyi_icon"
+                        android:drawablePadding="15dp"
+                        android:singleLine="true"
+                        android:text="累计收益"
+                        android:textColor="@color/fragment_item_tag_black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fragment_huoqibao_ljsy_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/youjiantou"
+                        android:singleLine="true"
+                        android:text="@string/float_zero"
+                        android:textColor="@color/control_text_checked"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="#dedede" />
+
+                <RelativeLayout
+                    android:id="@+id/fragment_huoqibao_yzsy_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/home_yue_selector"
+                    android:clickable="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/jinyizhoushouyi_icon"
+                        android:drawablePadding="15dp"
+                        android:singleLine="true"
+                        android:text="近一周收益"
+                        android:textColor="@color/fragment_item_tag_black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fragment_huoqibao_yzsy_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/youjiantou"
+                        android:singleLine="true"
+                        android:text="@string/float_zero"
+                        android:textColor="@color/control_text_checked"
+                        android:textSize="17sp" />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="#dedede" />
+
+
+                <RelativeLayout
+                    android:id="@+id/fragment_huoqibao_yysy_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/home_yue_selector"
+                    android:clickable="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/yinyiyueshouyi_icon"
+                        android:drawablePadding="15dp"
+                        android:singleLine="true"
+                        android:text="近一月收益"
+                        android:textColor="@color/fragment_item_tag_black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/fragment_huoqibao_yysy_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/youjiantou"
+                        android:singleLine="true"
+                        android:text="@string/float_zero"
+                        android:textColor="@color/control_text_checked"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#dedede" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_anquan" />
+
+                <include layout="@layout/layout_baozhang" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

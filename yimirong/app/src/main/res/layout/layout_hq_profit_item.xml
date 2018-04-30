@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_mine"
+                android:paddingLeft="13.0dip"
+                android:paddingRight="13.0dip">
+    <ImageView
+        android:id="@+id/iv_arrows"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/layout_hq_profit_item_profit"
+        android:layout_width="wrap_content"
+        android:layout_height="48.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:paddingLeft="17dp"
+        android:text="2016-03-10"
+        android:textColor="#333333"
+        android:textSize="18sp"
+       />
+
+    <TextView
+        android:id="@+id/layout_hq_profit_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/activity_profit_item_group_indicator"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/float_zero"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        />
+</RelativeLayout>

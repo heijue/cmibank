@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              android:background="@color/light_gray">
+
+    <include layout="@layout/title_bar"/>
+
+    <TextView
+        android:id="@+id/activity_setpass_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:textColor="@color/look_details_color"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/activity_setpass_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/set_pay_pass_info"
+        android:textColor="@color/look_details_color"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/activity_setpass_password_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="-1dp"
+            android:background="@drawable/shape_rect"
+            android:contentDescription="@string/image_content"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/activity_setpass_password_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toRightOf="@+id/activity_setpass_password_1"
+            android:background="@drawable/shape_rect"
+            android:contentDescription="@string/image_content"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/activity_setpass_password_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toRightOf="@+id/activity_setpass_password_2"
+            android:background="@drawable/shape_rect"
+            android:contentDescription="@string/image_content"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/activity_setpass_password_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toRightOf="@+id/activity_setpass_password_3"
+            android:background="@drawable/shape_rect"
+            android:contentDescription="@string/image_content"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/activity_setpass_password_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toRightOf="@+id/activity_setpass_password_4"
+            android:background="@drawable/shape_rect"
+            android:contentDescription="@string/image_content"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/activity_setpass_password_6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_toRightOf="@+id/activity_setpass_password_5"
+            android:background="@drawable/shape_rect"
+            android:contentDescription="@string/image_content"
+            android:scaleType="center"/>
+    </RelativeLayout>
+
+</LinearLayout>

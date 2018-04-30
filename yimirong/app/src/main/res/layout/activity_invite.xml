@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_invite_title"
+        layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/activity_invite_title"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_orange_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_invite_yiyaoqing"
+                android:layout_width="0dp"
+                android:background="@drawable/shape_invite_left_white"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/yiyaoqing_haoyou"
+                android:textColor="@color/control_text_pressed"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/activity_invite_yijiaoyi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_invite_right"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/yijiaoyi_haoyou"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="center_vertical"
+            android:text="@string/yaoqing_info"
+            android:textColor="@color/look_details_color"
+            android:textSize="13sp"/>
+
+        <LinearLayout
+            android:id="@+id/invite_logo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/light_gray">
+
+            <TextView
+                android:id="@+id/activity_invite_number"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="@string/zhuce_haoma"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/activity_invite_time"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="@string/zhuce_shijian"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/activity_invite_listview"
+            android:layout_weight="1"
+            android:divider="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:scrollbars="none"/>
+
+        <RelativeLayout
+            android:id="@+id/invite_null"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/light_gray"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/invite_null_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/yaoqinghy_gray"/>
+
+            <TextView
+                android:id="@+id/invite_null_text"
+                android:layout_below="@id/invite_null_img"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您还未邀请好友哦！"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_invite_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/selector_invite_btn"
+        android:text="@string/liji_yaoqing"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</LinearLayout>

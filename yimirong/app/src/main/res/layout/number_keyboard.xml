@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector_bg_white"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_key_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/soft_key_1"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:text="@string/one"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf"/>
+
+        <TextView
+            android:id="@+id/soft_key_2"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:textSize="22sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/two"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf"/>
+
+        <TextView
+            android:id="@+id/soft_key_3"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:text="@string/three"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bfbfbf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_key_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/soft_key_4"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:text="@string/four"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf"/>
+
+        <TextView
+            android:id="@+id/soft_key_5"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:textSize="22sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/five"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf"/>
+
+        <TextView
+            android:id="@+id/soft_key_6"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:textSize="22sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/six"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bfbfbf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_key_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/soft_key_7"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:textSize="22sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/seven"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf"/>
+
+        <TextView
+            android:id="@+id/soft_key_8"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:textSize="22sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/eight"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/dark_gray"/>
+
+        <TextView
+            android:id="@+id/soft_key_9"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:textSize="22sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/nine"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bfbfbf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_key_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/keyboard_btn_close"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            android:clickable="true"
+            android:background="@drawable/selector_key_del"
+            android:gravity="center"
+            android:text="@string/close"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf"/>
+
+        <TextView
+            android:id="@+id/soft_key_0"
+            style="@style/NumberSoftKeyBoard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="22sp"
+            android:layout_weight="1"
+            android:text="@string/zero"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#bfbfbf"/>
+
+        <TextView
+            android:id="@+id/keyboard_backspace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:background="@drawable/selector_del_key"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bfbfbf"/>
+
+</LinearLayout>

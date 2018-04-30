@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="1px"
+            android:background="@color/aliwx_bg_color_white"
+    >
+    <TextView
+        android:id="@+id/layout_profit_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="累计投资收益(元)"
+        android:textColor="@color/look_details_color"
+        android:layout_marginLeft="13dp"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/layout_profit_list_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="@string/float_zero"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="13dp"
+        android:textColor="@color/control_text_pressed"
+        android:textSize="38sp"/>
+</LinearLayout>

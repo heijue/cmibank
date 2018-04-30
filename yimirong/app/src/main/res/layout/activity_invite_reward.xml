@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:orientation="vertical"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                tools:context="cn.app.yimirong.activity.InviteRewardActivity">
+
+    <include
+        android:id="@+id/activity_invite_title"
+        layout="@layout/title_bar"/>
+
+    <TextView
+        android:layout_below="@id/activity_invite_title"
+        android:id="@+id/layout_profit_list_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/float_zero"
+        android:textColor="@color/control_text_pressed"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/layout_profit_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_profit_list_sum"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:text="邀请奖励(元)"
+        android:textColor="@color/look_details_color"
+        android:textSize="15sp"/>
+
+    <View
+        android:id="@+id/line_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layout_profit_list_title"
+        android:background="#cccccc"/>
+
+    <LinearLayout
+        android:layout_below="@id/line_line"
+        android:id="@+id/text_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="注册号码"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="#4c4c4c"/>
+
+        <TextView
+            android:id="@+id/what_reward"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.3"
+            android:text="首次交易时间"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="#f7f7f7"
+            android:textColor="#4c4c4c"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="奖励金额"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="#4c4c4c"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@id/text_text"
+        android:id="@+id/reward_invite_listview"
+        android:divider="#cccccc"
+        android:dividerHeight="1px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:scrollbars="none"/>
+
+    <ImageView
+        android:layout_below="@id/text_text"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:src="@drawable/yaoqing_touming"/>
+</RelativeLayout>

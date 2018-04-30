@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                tools:context="cn.app.yimirong.activity.ResetLoginActivity">
+
+    <include
+        layout="@layout/title_bar"
+        android:id="@+id/reset_title"/>
+
+    <TextView
+        android:id="@+id/sms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sms_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_below="@id/reset_title"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_below="@id/sms_text"
+        android:id="@+id/shoujihao_edit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="45dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:id="@+id/num_qianzhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/shoujihao"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:textColor="#999999"/>
+
+        <TextView
+            android:id="@+id/activity_resetyanzheng_zhanghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/num_qianzhui"
+            android:singleLine="true"
+            android:text="注册手机号码"
+            android:textColor="#999999"
+            android:textSize="16sp"/>
+
+
+        <View
+            android:id="@+id/login_zhanghao_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/shoujihao_edit"
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:id="@+id/mima_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:layout_marginRight="50dp"
+            android:drawableLeft="@drawable/yanzhengma"
+            android:drawablePadding="3dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/activity_resetyanzheng_ma"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/mima_text"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:singleLine="true"
+            android:maxLength="4"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="#cccccc"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/reset_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送验证码"
+            android:textColor="@color/control_text_pressed"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+        <View
+            android:id="@+id/test_mima_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/control_text_pressed"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reset_text_btn"
+        android:layout_below="@id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_login_button"
+        android:textColor="#ff9898"
+        android:text="下一步"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:textSize="17sp"/>
+
+
+</RelativeLayout>

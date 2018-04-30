@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:clipToPadding="true"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              tools:context="cn.app.yimirong.activity.MyRewardActivity">
+
+    <include
+        android:id="@+id/activity_my_barcode_titlebar"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/layout_profit_list_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/float_zero"
+        android:textColor="@color/control_text_pressed"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/layout_profit_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:text="累计奖励(元)"
+        android:textColor="@color/look_details_color"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:id="@+id/yaoqing_jiangli"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/selector_mine"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请好友奖励"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/yaoqing_jiangli_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:drawableRight="@drawable/next"
+            android:drawablePadding="10dp"
+            android:textColor="@color/control_text_pressed"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jiaoyi_jiangli"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="55dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_mine"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好友交易奖励"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/jiaoyi_jiangli_money"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textSize="17sp"
+            android:gravity="right"
+            android:drawableRight="@drawable/next"
+            android:drawablePadding="10dp"
+            android:textColor="@color/control_text_pressed"
+            />
+    </LinearLayout>
+
+</LinearLayout>

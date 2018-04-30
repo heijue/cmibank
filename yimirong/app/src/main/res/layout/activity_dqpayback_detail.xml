@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true">
+
+    <include
+        android:id="@+id/activity_dqpayback_detail_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/huikuan"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:layout_below="@+id/activity_dqpayback_detail_title"
+        android:paddingTop="25dp"
+        android:layout_marginBottom="1dp"
+        >
+
+        <ImageView
+            android:id="@+id/wanchen_img"
+            android:src="@drawable/jiaoyichenggong"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/wancheng_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回款成功"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="21dp"
+            android:layout_below="@id/wanchen_img"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/huikuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="17dp"
+            android:paddingLeft="13dp"
+            android:paddingTop="17dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="@string/product_detail"
+                android:textColor="@color/look_details_color"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/activity_payback_detail_pname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/light_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="17dp"
+            android:paddingLeft="13dp"
+            android:paddingTop="17dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="@string/pay_back_num"
+                android:textColor="@color/look_details_color"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/activity_payback_detail_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/light_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="17dp"
+            android:paddingLeft="13dp"
+            android:paddingTop="17dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="@string/pay_back_way"
+                android:textColor="@color/look_details_color"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/activity_payback_detail_backway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/light_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="17dp"
+            android:paddingLeft="13dp"
+            android:paddingTop="17dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="@string/jiaoyi_hao"
+                android:textColor="@color/look_details_color"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/activity_payback_detail_paynum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

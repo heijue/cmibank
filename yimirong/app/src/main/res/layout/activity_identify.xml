@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:background="@color/light_gray">
+
+    <include
+        android:id="@+id/activity_identify_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/activity_identify_secu_info"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/activity_identify_title_bar"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/find_pay_pass_info"
+            android:textColor="@color/look_details_color"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_identify_form_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_identify_secu_info"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/activity_identify_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="@string/hint_input_real_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="13dp"
+            android:background="@color/dark_gray"/>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="@string/idno"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/activity_identify_idcard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="@string/hint_input_real_idno"
+                android:imeOptions="actionDone"
+                android:digits="0123456789Xx "
+                android:maxLength="21"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/set_paypass_qingchu"
+                android:src="@drawable/selector_qingchu"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dark_gray"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/activity_identify_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_identify_form_edit"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/selector_invite_btn"
+        android:text="@string/next_step"
+        android:textColor="#ff9898"
+        android:textSize="16sp"/>
+
+    <!--<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginBottom="46dp">-->
+
+    <!--<TextView android:id="@+id/activity_identify_message1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:gravity="center_horizontal" android:text="@string/if_doubt" android:textColor="#9b9b9b" android:textSize="13sp"/>-->
+
+    <!--<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/activity_identify_message1" android:layout_marginTop="3dp" android:gravity="center_horizontal">-->
+
+    <!--<TextView android:id="@+id/activity_identify_message2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_kefu" android:textColor="#9b9b9b" android:textSize="13sp"/>-->
+
+    <!--<TextView android:id="@+id/activity_identify_service_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/activity_identify_message2" android:clickable="true" android:text="@string/service_phone" android:textColor="@color/control_text_pressed" android:textSize="13sp"/>-->
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

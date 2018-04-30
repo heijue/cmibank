@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <include
+        layout="@layout/title_bar"
+        android:id="@+id/forget_title"/>
+
+    <TextView
+        android:id="@+id/pass_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过短信验证码找回密码"
+        android:textColor="#333"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/forget_title"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_below="@id/pass_text"
+        android:id="@+id/zhuce_num_edit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/num_qianzhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shoujihao"
+            android:layout_marginRight="20dp"
+       />
+
+        <EditText
+            android:id="@+id/activity_phone_numer_et"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/num_qianzhui"
+            android:background="@null"
+            android:hint="请输入您的手机号码"
+            android:singleLine="true"
+            android:phoneNumber="true"
+            android:inputType="phone|number"
+            android:maxLength="13"
+            android:digits="0123456789 "
+            android:textColor="@color/black"
+            android:textColorHint="#cccccc"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/zhuce_phone_qingchu"
+            android:src="@drawable/selector_qingchu"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:id="@+id/login_zhanghao_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/control_text_pressed"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_phone_next"
+        android:layout_below="@id/zhuce_num_edit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_invite_btn"
+        android:textColor="@color/white"
+        android:text="下一步"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:textSize="17sp"/>
+</RelativeLayout>

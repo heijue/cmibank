@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_bg_dialog_white_10"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_download_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="@string/downloading"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/dialog_download_currentsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00MB"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/dialog_download_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:layout_toRightOf="@+id/dialog_download_currentsize"/>
+
+        <TextView
+            android:id="@+id/dialog_download_totalsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00MB"
+            android:layout_toRightOf="@+id/dialog_download_separator"/>
+
+        <TextView
+            android:id="@+id/dialog_download_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00%"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/dialog_download_progressbar"
+        style="@style/RedProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:maxHeight="15dp"
+        android:minHeight="15dp"
+        android:progress="0"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+</LinearLayout>

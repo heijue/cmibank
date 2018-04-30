@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <TextView android:id="@+id/activity_pay_single" android:layout_width="wrap_content" android:layout_height="26dp" android:paddingLeft="15dp" android:paddingRight="15dp" android:gravity="center_vertical" android:text="@string/card_quota" android:textColor="#0d81f2" android:textSize="14sp" android:singleLine="true"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="50dp" android:background="@color/white" android:paddingLeft="15dp" android:paddingRight="15dp">
+    <ImageView
+        android:id="@+id/activity_pay_bank_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/yinhangbeijing"/>
+
+
+
+    <TextView android:id="@+id/activity_pay_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/activity_pay_bank_icon"
+        android:textColor="@color/fragment_item_tag_black"
+        android:textSize="17sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp">
+
+    <TextView android:id="@+id/pay_money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:text="@string/pay_money"
+        android:textColor="#303030"
+        android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/money_symbol"
+            android:layout_below="@id/pay_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/fragment_item_tag_black"
+            android:text="￥"/>
+
+        <EditText android:id="@+id/activity_pay_money_num"
+            android:layout_below="@id/pay_money_text"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/money_symbol"
+            android:layout_alignTop="@id/money_symbol"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/fragment_item_tag_black"
+            android:textCursorDrawable="@null"
+            android:textSize="34sp"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今日还可充值"
+            android:textColor="@color/dark_gray_2"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/activity_pay_cd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/int_zero"
+            android:textColor="@color/control_text_pressed"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ci"
+            android:textColor="@color/dark_gray_2"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_pay_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/selector_bg_red_btn"
+        android:text="@string/pay_ok"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

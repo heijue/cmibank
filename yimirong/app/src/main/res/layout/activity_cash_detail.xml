@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+      >
+        <ImageView
+            android:id="@+id/chuli_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/chulizhong"
+            />
+
+        <TextView
+            android:id="@+id/zhuanchu_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            android:text="处理中"
+            android:textColor="@color/black"
+            android:textSize="21sp" />
+
+        <TextView
+            android:background="#e4e4e4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/zhuanchudao_bankcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:textColor="#FF6F6F6F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/zhuanchu_info_jine"
+                android:textColor="#FF6F6F6F"
+                android:layout_width="wrap_content"
+                android:paddingRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0.00元"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/center_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:src="@drawable/shenqingtixian" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/center_img"
+                android:text="申请提现"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/left_time"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/left_text"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/center_img"
+                android:layout_marginLeft="10dp"
+                android:text="2016-06-12 10:22"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:src="@drawable/yinhangchuli" />
+
+            <TextView
+                android:id="@+id/center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/left_img"
+                android:text="等待银行处理"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/center_time"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/center_text"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/left_img"
+                android:layout_marginLeft="10dp"
+                android:text="2016-06-12 10:22"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingBottom="1dp"
+                android:src="@drawable/daozhangshijian" />
+
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/right_img"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/right_img"
+                android:text="到账时间"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/right_time"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/right_text"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/right_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="2016-06-12 10:22"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+

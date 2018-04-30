@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_bar"/>
+
+    <ExpandableListView
+        android:id="@+id/activity_qa_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ebebeb"
+
+        android:dividerHeight="1dp"
+        android:childDivider="#00000000"
+        android:background="@color/light_gray">
+    </ExpandableListView>
+
+</LinearLayout>

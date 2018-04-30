@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/light_gray"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/activity_my_barcode_titlebar"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:id="@+id/fenxiang_erweima"
+        android:layout_width="295dp"
+        android:layout_height="410dp"
+        android:layout_below="@+id/activity_my_barcode_titlebar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_rect_border">
+
+        <ImageView
+            android:id="@+id/activity_my_barcode_image"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:id="@+id/activity_account_isverified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_my_barcode_image"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/look_details_color"
+            android:text="@string/scan_code"
+            android:textSize="15sp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:paddingLeft="13dp"
+            android:background="#f2f2f2"
+            android:layout_alignParentBottom="true"
+            android:paddingRight="13dp">
+
+            <RelativeLayout
+                android:id="@+id/activity_my_barcode_icon_wrapper"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/activity_my_barcode_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/touxiang_wcg"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/activity_my_barcode_icon_wrapper"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/activity_my_barcode_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/activity_my_barcode_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_below="@id/activity_my_barcode_name"
+                    android:text="@string/account_phone"
+                    android:textColor="@color/look_details_color"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/layout"
+            android:background="@color/dark_gray"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/activity_invite_erweima"
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/fenxiang_erweima"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_invite_btn"
+        android:text="分享"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

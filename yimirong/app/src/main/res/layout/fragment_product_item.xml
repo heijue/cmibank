@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_mine"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/light_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/fragment_product_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yellow"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/fragment_product_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                android:text=""
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/item_tag"
+            android:layout_width="5dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/fragment_item_tag_yello"/>
+
+        <TextView
+            android:id="@+id/fragment_product_name"
+            android:layout_toRightOf="@+id/item_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="产品"
+            android:textColor="#303030"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/fragment_product_qigou"
+            android:layout_width="76dp"
+            android:layout_height="18dp"
+            android:layout_alignLeft="@+id/item_tag"
+            android:layout_below="@+id/fragment_product_name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_product_qigou"
+            android:gravity="center"
+            android:text="100元起投"
+            android:textColor="@color/dark_gray_2"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/benxi_safe"
+            android:layout_width="76dp"
+            android:layout_height="18dp"
+            android:layout_alignBaseline="@+id/fragment_product_qigou"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/fragment_product_qigou"
+            android:background="@drawable/shape_product_qigou"
+            android:gravity="center"
+            android:text="本息保障"
+            android:textColor="@color/dark_gray_2"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/fragment_product_yqnh"
+            android:layout_below="@id/fragment_product_qigou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_tag"
+            android:layout_marginTop="10dp"
+            android:text="@string/float_zero"
+            android:textColor="@color/control_text_checked"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/fragment_product_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/fragment_product_yqnh"
+            android:layout_marginBottom="10dp"
+            android:text="@string/yuqi_nianhua"
+            android:textColor="@color/look_details_color"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/fragment_product_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fragment_product_yqnh"
+            android:layout_toRightOf="@+id/fragment_product_yqnh"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/baifenhao"
+            android:textColor="@color/control_text_checked"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/fragment_product_qixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fragment_product_profit"
+            android:layout_centerHorizontal="true"
+            android:text="投资期限"
+            android:textColor="@color/look_details_color"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/fragment_product_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/fragment_product_yqnh"
+            android:layout_alignLeft="@+id/fragment_product_qixian"
+            android:text="@string/zero"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/control_text_checked"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/fragment_product_tian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/fragment_product_days"
+            android:layout_alignBottom="@+id/fragment_product_days"
+            android:layout_alignTop="@+id/fragment_product_days"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="@string/tian"
+            android:textColor="@color/control_text_checked"
+            android:textSize="20sp"/>
+
+        <RelativeLayout
+            android:id="@+id/progress_layout"
+            android:layout_below="@id/fragment_product_profit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <ProgressBar
+                android:id="@+id/fragment_product_progress"
+                android:layout_width="211dp"
+                android:layout_height="6dp"
+                android:max="100"
+                android:layout_centerVertical="true"
+                android:progressDrawable="@drawable/my_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+            <TextView
+                android:id="@+id/surplus_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:textColor="@color/look_details_color"
+                android:text="剩余可投:0元"/>
+        </RelativeLayout>
+
+
+
+        <cn.app.yimirong.view.ProgressWheel
+
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignBottom="@+id/fragment_product_profit"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="14dp"
+            app:barColor="@color/control_text_pressed"
+            app:barWidth="3dp"
+            app:rimColor="#ffd1d1"
+            app:rimWidth="3dp"
+            app:text="0%"
+            android:visibility="gone"
+            app:textColor="@color/control_text_pressed"
+            app:textSize="16sp"/>
+
+        <Chronometer
+            android:id="@+id/fragment_product_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/progress_layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="@dimen/payview_money_margin_top"
+            android:background="@drawable/invest_btn_bg"
+            android:format="在售"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

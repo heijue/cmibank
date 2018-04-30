@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingRight="12dp"
+              android:paddingLeft="12dp"
+              android:paddingBottom="10dp"
+              android:paddingTop="10dp"
+              android:background="@color/light_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/shape_feed_back"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+            <TextView
+                android:id="@+id/news_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/company_news_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/bottom_look"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="查看详情"
+            android:textSize="13sp"
+            android:drawableRight="@drawable/jiantou"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

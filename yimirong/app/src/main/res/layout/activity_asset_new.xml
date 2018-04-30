@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="213dp"
+                android:background="#EC515F">
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="133dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/ellipse">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="资产总额度(元)"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/activity_assets_allmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:text="0.00"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-10dp"
+                    android:background="@drawable/jianbian" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/light_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9d9d9" />
+
+            <RelativeLayout
+                android:id="@+id/activity_assets_yue_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_mine"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@drawable/assets_1"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/account_yue"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/activity_assets_yue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/next_icon1"
+                    android:text="0.00"
+                    android:textColor="#eb515e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/next_icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="7dp"
+                    android:drawableRight="@drawable/ic_next"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/control_text_pressed"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="12dp"
+                android:background="#d9d9d9" />
+
+            <RelativeLayout
+                android:id="@+id/activity_assets_dq_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_mine"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/assets_2"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dingqi_invest_sum"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/activity_assets_dq_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/next_icon2"
+                    android:text="0.00"
+                    android:textColor="#eb515e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/next_icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="7dp"
+                    android:drawableRight="@drawable/ic_next"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/control_text_pressed"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="12dp"
+                android:background="#d9d9d9" />
+
+            <RelativeLayout
+                android:id="@+id/activity_assets_dq_profit_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_mine"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/assets_3"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center_vertical"
+                    android:text="活期总资产"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/activity_assets_dq_profit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/next_icon3"
+                    android:text="0.00"
+                    android:textColor="#eb515e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/next_icon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="7dp"
+                    android:drawableRight="@drawable/ic_next"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/control_text_pressed"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="12dp"
+                android:background="#d9d9d9" />
+
+            <RelativeLayout
+                android:id="@+id/activity_assets_khb_money_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_mine"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/assets_4"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dangqian_dingqi_profit"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/activity_assets_khb_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/next_icon4"
+                    android:text="0.00"
+                    android:textColor="#eb515e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/next_icon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="7dp"
+                    android:drawableRight="@drawable/ic_next"
+                    android:gravity="center"
+                    android:textColor="@color/control_text_pressed"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="12dp"
+                android:background="#d9d9d9" />
+
+            <RelativeLayout
+                android:id="@+id/activity_assets_exp_profit_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_mine"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/assets_5"
+                    android:drawablePadding="10dp"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/dangqian_tiyanjin_profit"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/activity_assets_exp_profit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/next_icon5"
+                    android:text="0.00"
+                    android:textColor="#eb515e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/next_icon5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="7dp"
+                    android:drawableRight="@drawable/ic_next"
+                    android:gravity="center"
+                    android:textColor="@color/control_text_pressed"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray">
+
+                <include
+                    layout="@layout/layout_baozhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_horizontal" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

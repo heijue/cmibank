@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:background="@color/light_gray"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/message_control"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/able_exp_layout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/able_exp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提醒"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/control_text_pressed"/>
+
+            <ImageView
+                android:id="@+id/able_hot"
+                android:layout_toRightOf="@id/able_exp_text"
+                android:layout_marginLeft="6dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_tx"/>
+            <View
+                android:id="@+id/able_exp_line"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:background="@color/control_text_pressed"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/using_exp_layout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/using_exp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公告"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/using_hot"
+                android:layout_toRightOf="@id/using_exp_text"
+                android:layout_marginLeft="6dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_tx"/>
+            <View
+                android:id="@+id/using_exp_line"
+                android:layout_width="match_parent"
+                android:layout_height="4px"
+                android:visibility="gone"
+                android:background="@color/control_text_pressed"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/activity_message_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="10dp"
+        android:background="@color/light_gray"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none"/>
+
+</LinearLayout>

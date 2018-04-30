@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="#60000000">
+
+    <ImageView
+        android:id="@+id/success_dagou"
+        android:src="@drawable/dagou"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/dialog_success_msg"
+        android:layout_below="@id/success_dagou"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="注册成功"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="240dp" android:layout_height="90dp" android:background="@drawable/shape_bg_dialog_white_10" android:paddingTop="30dp" android:paddingBottom="30dp">-->
+    <!---->
+    <!--<TextView android:id="@+id/dialog_success_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="@string/set_success" android:textSize="19sp" android:textColor="@color/black" android:drawableLeft="@drawable/chengong" android:drawablePadding="8dp"/>   -->
+
+    <!--</RelativeLayout>-->

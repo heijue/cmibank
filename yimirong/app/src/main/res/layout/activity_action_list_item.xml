@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="13dp"
+                android:paddingLeft="13dp"
+                android:background="@drawable/selector_mine">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/activity_action_list_item_right"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/activity_asset_list_item_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/activity_asset_list_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_action_list_item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/activity_asset_list_item_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/control_text_pressed"
+            android:singleLine="true"/>
+
+
+        <TextView
+            android:id="@+id/activity_asset_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

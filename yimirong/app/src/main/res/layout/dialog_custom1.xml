@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="140dp"
+              android:background="@drawable/shape_bg_dialog_white_10"
+              android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tishi"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/dialog_custom1_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="@string/info"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/dialog_custom1_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="提示消息内容"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/control_text_pressed"/>
+
+    <TextView
+        android:id="@+id/dialog_custom1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_text_bottom_bg"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:text="@string/ok"
+        android:textSize="17sp"
+        android:textColor="#007aff"/>
+
+</LinearLayout>

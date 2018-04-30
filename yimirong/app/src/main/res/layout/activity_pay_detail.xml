@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/light_gray"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        android:paddingTop="25dp"
+        android:background="#fff"
+        >
+
+        <ImageView
+            android:id="@+id/wanchen_img"
+            android:src="@drawable/zhifuchenggong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/wancheng_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值成功"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="21dp"
+            android:layout_below="@id/wanchen_img"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/zhuanru" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image1"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/daozhangchenggong" />
+
+        <TextView
+            android:id="@+id/tv_transfer_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/image1"
+            android:text="转入金额"
+            android:textSize="17sp"
+            android:textColor="#333" />
+
+        <TextView
+            android:id="@+id/tv_transfer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_transfer_money"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/image1"
+            android:text="到账时间"
+            android:textColor="#666" />
+
+        <TextView
+            android:id="@+id/tv_account_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image2"
+            android:layout_toRightOf="@+id/image2"
+            android:layout_marginLeft="9dp"
+            android:text="充值成功"
+            android:textSize="17sp"
+            android:textColor="#333"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_account_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到账时间"
+            android:textSize="12sp"
+            android:textColor="#666"
+            android:layout_below="@+id/image2"
+            android:layout_alignLeft="@+id/tv_account_state"
+            android:layout_alignStart="@+id/tv_account_state"
+            android:layout_marginBottom="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

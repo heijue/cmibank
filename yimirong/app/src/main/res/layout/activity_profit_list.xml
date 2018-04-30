@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:background="@color/light_gray">
+
+    <include
+        android:id="@+id/activity_profit_list_title"
+        layout="@layout/title_bar"/>
+
+    <cn.app.yimirong.view.pull.PullToRefreshLayout
+        android:id="@+id/activity_profit_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_profit_list_title">
+
+        <include layout="@layout/refresh_head"/>
+
+        <cn.app.yimirong.view.pull.PullableExpandableListView
+            android:id="@+id/activity_profit_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:cacheColorHint="@null"
+            android:childDivider="#d0d0d0"
+            android:divider="#d0d0d0"
+            android:dividerHeight="1px"
+            android:scrollbars="none"/>
+
+        <include layout="@layout/load_more"/>
+    </cn.app.yimirong.view.pull.PullToRefreshLayout>
+
+    <include
+        layout="@layout/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_profit_list_title"/>
+
+</RelativeLayout>

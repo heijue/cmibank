@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activity.MainActivity">
+
+    <include
+        android:id="@+id/main_title_bar_net"
+        layout="@layout/title_bar"/>
+
+
+    <cn.app.yimirong.view.MyViewpage
+        android:id="@+id/activity_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_main_bottom_nav"
+        android:cacheColorHint="@color/transparent"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/activity_main_bottom_nav"
+        android:background="@color/light_gray"/>
+
+    <RadioGroup
+        android:id="@+id/activity_main_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/bottom_nav_bottom"
+        android:paddingTop="@dimen/bottom_nav_top">
+
+        <RadioButton
+            android:id="@+id/activity_main_nav_jingxuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_invest_control"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:singleLine="true"
+            android:text="@string/invite_control_text"
+            android:textColor="@drawable/selector_nav_text"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_nav_huoqibao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_wc_control"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:singleLine="true"
+            android:text="@string/wc_control_text"
+            android:textColor="@drawable/selector_nav_text"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_nav_invest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/selevted_shouye_control"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:singleLine="true"
+            android:text="@string/home_control_text"
+            android:textColor="@drawable/selector_nav_text"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_nav_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_mine_control"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:singleLine="true"
+            android:text="@string/mine_control_text"
+            android:textColor="@drawable/selector_nav_text"
+            android:textSize="12sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/no_network"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_below="@id/main_title_bar_net"
+        android:background="#60000000"
+        android:gravity="center"
+        android:layout_height="42dp">
+
+        <ImageView
+            android:src="@drawable/tishi"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="暂无网络连接，请检查您的网络设置"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

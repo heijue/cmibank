@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:clipToPadding="true">
+
+    <include layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:paddingTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/wanchen_img"
+            android:src="@drawable/zhifuchenggong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/wancheng_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值成功"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:textSize="21dp"
+            android:layout_below="@id/wanchen_img"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp">
+
+    <ImageView
+        android:id="@+id/activity_pay_result_iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zhuanru"
+        android:contentDescription="@string/image_content"/>
+
+    <TextView
+        android:id="@+id/activity_pay_result_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/activity_pay_result_iv1"
+        android:textColor="@color/fragment_item_tag_black"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/activity_pay_result_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/dark_gray_2"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/activity_pay_result_tv1"
+        android:layout_alignLeft="@+id/activity_pay_result_tv1"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/activity_pay_result_iv2"
+        android:layout_below="@+id/activity_pay_result_iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chenggong"
+        android:contentDescription="@string/image_content"/>
+
+    <TextView
+        android:id="@+id/activity_pay_result_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_pay_result_iv2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/activity_pay_result_iv2"
+        android:gravity="center_vertical|left"
+        android:text="@string/pay_success"
+        android:textColor="@color/fragment_item_tag_black"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/activity_pay_result_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/dark_gray_2"
+        android:layout_below="@+id/activity_pay_result_tv2"
+        android:layout_alignLeft="@+id/activity_pay_result_tv1"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

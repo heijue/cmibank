@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_bg_dialog_white_10"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_debug_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="@string/info"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/dialog_debug_input"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textCursorDrawable="@null"
+        android:hint="请输入调试模式密码"
+        android:textColorHint="#aaaaaa"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_debug_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/dialog_debug_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="15dp">
+
+            <RadioButton
+                android:id="@+id/dialog_debug_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/dialog_debug_http"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="http"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/dialog_debug_https"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="testpay"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_debug_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/selector_lb_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/cancel"
+            android:textColor="#007aff"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"/>
+
+        <TextView
+            android:id="@+id/dialog_debug_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/selector_rb_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/ok"
+            android:textColor="#007aff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>

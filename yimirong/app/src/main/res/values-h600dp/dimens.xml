@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="invite_desc_height">468dp</dimen>
+    <dimen name="keyboard_key_height">55dp</dimen>
+    <dimen name="unlock_view_height">350dp</dimen>
+</resources>

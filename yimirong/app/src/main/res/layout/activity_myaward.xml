@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/activity_myaward_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar"/>
+
+    <TextView
+        android:id="@+id/activity_myaward_jiangli_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_myaward_titlebar"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/leiji_jiangli"/>
+
+    <TextView
+        android:id="@+id/activity_myaward_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_myaward_jiangli_title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/float_zero"
+        android:textColor="#ff6600"
+        android:textSize="48sp"/>
+
+    <View
+        android:id="@+id/activity_myaward_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/activity_myaward_sum"
+        android:background="@color/dark_gray"/>
+
+    <LinearLayout
+        android:id="@+id/activity_myaward_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_myaward_line1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_myaward_yaoqing_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_item"
+            android:clickable="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/yaoqing_jiangli"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/activity_myaward_yaoqing_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/jiantou_hui"
+                android:gravity="center"
+                android:text="@string/float_zero"
+                android:textColor="#ff6600"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="13dp"
+            android:background="@color/light_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/activity_myaward_yongjin_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_item"
+            android:clickable="true"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/yongjin_jiangli"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_myaward_yongjin_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/jiantou_hui"
+                android:gravity="center"
+                android:text="@string/float_zero"
+                android:textColor="#ff6600"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/activity_myaward_content"
+        android:background="@color/dark_gray"/>
+
+</RelativeLayout>

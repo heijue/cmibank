@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:orientation="horizontal"
+              android:id="@+id/invite_item_layout"
+              android:gravity="center_vertical"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/activity_invite_item_number"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:text="@string/zhuce_haoma"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/activity_invite_item_time"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:text="@string/zhuce_shijian"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

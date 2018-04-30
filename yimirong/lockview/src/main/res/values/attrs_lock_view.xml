@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LockView">
+        <attr name="lock_nodeNormal" format="color|reference" />
+        <attr name="lock_nodePressed" format="color|reference" />
+        <attr name="lock_nodeWrong" format="color|reference" />
+        <attr name="lock_lineColor" format="color" />
+        <attr name="lock_lineWidth" format="dimension" />
+        <attr name="lock_padding" format="dimension" />
+        <attr name="lock_spacing" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="270dp"
+                android:layout_height="190dp"
+    android:background="@drawable/shape_dialog">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认手机号码"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_below="@id/dialog_title"
+        android:id="@+id/yanzhengma_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="我们将发送验证码短信到这个号码："/>
+
+    <TextView
+        android:layout_below="@id/yanzhengma_text"
+        android:id="@+id/shoujihao_num"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="+86 000 0000 0000"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_btnoff"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="取消"
+            android:textSize="17sp"
+            android:textColor="#0d81f2"
+            android:background="@null"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="@color/control_text_pressed"/>
+
+        <Button
+            android:id="@+id/dialog_btnok"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="确定"
+            android:textSize="17sp"
+            android:textColor="#0d81f2"
+            android:background="@null"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_above="@id/btn_layout"
+        android:layout_width="match_parent"
+        android:background="@color/control_text_pressed"
+        android:layout_height="0.5dp"/>
+
+</RelativeLayout>

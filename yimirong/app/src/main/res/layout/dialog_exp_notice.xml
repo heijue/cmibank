@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="300dp"
+              android:layout_height="350dp">
+    
+    <ImageView
+        android:id="@+id/exp_dialog_dismiss"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:src="@drawable/tyj_x"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:layout_below="@id/exp_dialog_dismiss"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/tyj_tanchuang"/>
+    <TextView
+        android:id="@+id/exp_zhucesong_text"
+        android:layout_below="@id/exp_dialog_dismiss"
+        android:layout_marginTop="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册即送您"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#981919"/>
+
+    <TextView
+        android:id="@+id/exp_song_money"
+        android:layout_below="@id/exp_zhucesong_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5000元"
+        android:textSize="40sp"
+        android:textColor="#f13021"/>
+
+    <TextView
+        android:layout_below="@id/exp_song_money"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="体验金券"
+        android:textColor="#981919"
+        android:textSize="16sp"/>
+    
+    <TextView
+        android:id="@+id/exp_dialog_zhucebtn"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"
+        android:text="立即注册"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/tyj_anniu"/>
+
+</RelativeLayout>

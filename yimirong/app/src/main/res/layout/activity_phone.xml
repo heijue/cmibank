@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <include
+        layout="@layout/title_bar"
+        android:id="@+id/zhuce_title"/>
+
+    <!--<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="50dp" android:singleLine="true" android:text="@string/input_phone_login_register" android:textColor="#303030" android:textSize="20sp"/>-->
+
+
+    <!--<EditText android:id="@+id/activity_phone_numer_et" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:background="@null" android:digits="0123456789 " android:drawableLeft="@drawable/tel" android:drawablePadding="10dp" android:hint="@string/phone_number" android:inputType="phone|number" android:maxLength="13" android:paddingLeft="15dp" android:singleLine="true" android:textColor="#000000" android:textColorHint="#a9a9a9" android:textCursorDrawable="@null" android:textSize="18sp"/>-->
+
+    <!--<View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:background="#d0d0d0"/>-->
+
+    <!--<Button android:id="@+id/activity_phone_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:layout_marginTop="34dp" android:background="@drawable/selector_bg_red_btn" android:text="@string/next_step" android:textColor="@color/white" android:textSize="18sp"/>-->
+    <RelativeLayout
+        android:layout_below="@id/zhuce_title"
+        android:id="@+id/zhuce_num_edit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/num_qianzhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shoujihao"/>
+
+        <EditText
+            android:id="@+id/activity_phone_numer_et"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/num_qianzhui"
+            android:background="@null"
+            android:hint="请输入您的手机号码"
+            android:singleLine="true"
+            android:phoneNumber="true"
+            android:inputType="phone|number"
+            android:maxLength="13"
+            android:digits="0123456789 "
+            android:textColor="@color/black"
+            android:textColorHint="#cccccc"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/zhuce_phone_qingchu"
+            android:src="@drawable/selector_qingchu"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:id="@+id/login_zhanghao_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/control_text_pressed"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_phone_next"
+        android:layout_below="@+id/zhuce_num_edit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_invite_btn"
+        android:textColor="@color/white"
+        android:text="注册"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:textSize="17sp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:text="@string/zhuce_tishi"/>
+
+        <TextView
+            android:id="@+id/activity_register_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/woncai_xieyi"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="#ff4747"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/activity_buy_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/huoqibao"
+                        android:textColor="@color/fragment_item_tag_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/activity_buy_start_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="当日起息"
+                        android:textColor="@color/control_text_checked"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/profit_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/yuqi_nianhua"
+                            android:textColor="@color/dark_gray_2"
+                            android:textSize="15sp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/profit_text"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:id="@+id/activity_buy_lilv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/static_lilv"
+                                android:textColor="@color/control_text_checked"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/activity_buy_lilv"
+                                android:layout_toRightOf="@+id/activity_buy_lilv"
+                                android:text="@string/baifenhao"
+                                android:textColor="@color/control_text_checked"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:background="#cccaca" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/touzi_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="投资期限"
+                            android:textColor="@color/dark_gray_2"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/activity_buy_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/touzi_text"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/dangri_qixi"
+                            android:textColor="@color/fragment_item_tag_black"
+                            android:textSize="19sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/ed_before_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/buy_money_num"
+                    android:textColor="@color/fragment_item_tag_black"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/activity_buy_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/ed_before_text"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/yi_yuan_qi_gou"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:singleLine="true"
+                    android:textColor="@color/fragment_item_tag_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/kegoujine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:text="可投金额"
+                    android:textColor="#aaaaaa"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/light_gray" />
+
+                <!--<ImageButton-->
+                <!--android:id="@+id/activity_buy_delete"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/ic_delete"-->
+                <!--android:clickable="true"-->
+                <!--android:visibility="gone"/>-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_buy_profit_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#d0d0d0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/yuqi_shouyi"
+                        android:textColor="@color/dark_gray_2"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/activity_buy_profit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|left"
+                        android:singleLine="true"
+                        android:text="0.00元"
+                        android:textColor="@color/dark_gray_2"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/activity_buy_edu_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/activity_buy_edu_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="您当前购买额度为"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/activity_buy_edu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/activity_buy_edu_title"
+                    android:text="0"
+                    android:textColor="@color/control_text_checked"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/activity_buy_edu"
+                    android:text="@string/yuan"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/activity_buy_edu_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="如何提升额度？"
+                    android:textColor="@color/control_text_checked"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_buy_add_bank_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_item"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/layout_padding"
+                    android:paddingRight="@dimen/layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="@string/pay_type"
+                        android:textColor="#303030"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/jiantou_hui"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/add_bank_card"
+                        android:textColor="@color/light_red"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_buy_pay_way_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_type"
+                    android:textColor="@color/dark_gray_2"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/light_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_buy_payway_wrapper1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+
+                    <ImageView
+                        android:id="@+id/yue_img"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhanghuyue_icon" />
+
+                    <TextView
+                        android:id="@+id/activity_buy_payway1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/yue_img"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="账户金额"
+                        android:textColor="@color/fragment_item_tag_black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/activity_buy_payway1_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/activity_buy_cb_way1"
+                        android:gravity="center_vertical"
+                        android:text="@string/zero"
+                        android:textColor="@color/fragment_item_tag_black"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/activity_buy_cb_way1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_checkbox_round"
+                        android:button="@null"
+                        android:checked="true" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#d0d0d0" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_buy_payway_wrapper2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <ImageView
+                        android:id="@+id/bank_img"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/zhanghuyue_icon" />
+
+                    <TextView
+                        android:id="@+id/activity_buy_payway2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/bank_img"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/fragment_item_tag_black"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/activity_buy_cb_way2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_checkbox_round"
+                        android:button="@null"
+                        android:checked="false" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/layout_baozhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp" />
+
+            <Button
+                android:id="@+id/activity_buy_submit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_padding"
+                android:layout_marginRight="@dimen/layout_padding"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_bg_red_btn"
+                android:paddingBottom="@dimen/btn_padding_bottom"
+                android:paddingTop="@dimen/btn_padding_top"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/light_gray"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              tools:context="cn.app.yimirong.activity.HQZCHistoryActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <cn.app.yimirong.view.pull.PullToRefreshLayout
+        android:id="@+id/activity_action_list_pullable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_action_list_title">
+
+        <include layout="@layout/refresh_head"/>
+
+        <cn.app.yimirong.view.pull.PullableExpandableListView
+            android:id="@+id/fragment_hqzhuanchu_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            android:dividerHeight="0.67dp"
+            android:divider="@color/transparent"
+            android:childDivider="#ebebeb"
+            android:scrollbars="none"/>
+
+        <include layout="@layout/load_more"/>
+
+    </cn.app.yimirong.view.pull.PullToRefreshLayout>
+
+    <include
+        layout="@layout/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_action_list_title"/>
+
+</LinearLayout>

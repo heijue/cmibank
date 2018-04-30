@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/light_gray"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/chulizhong"
+            android:drawablePadding="13dp"
+            android:textSize="21sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/fragment_item_tag_black"
+            android:text="处理中"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/activity_cash_result_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国银行(9910)"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/dark_gray_2"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/activity_cash_result_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="0.00元"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/dark_gray_2"
+                android:textSize="14sp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/activity_cash_result_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shenqingtixian"/>
+
+        <ImageView
+            android:id="@+id/activity_cash_result_iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yinhangchuli"
+            android:layout_below="@id/activity_cash_result_iv1"/>
+
+        <ImageView
+            android:id="@+id/activity_cash_result_iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/daozhangshijian"
+            android:layout_below="@id/activity_cash_result_iv2"/>
+
+        <TextView
+            android:id="@+id/activity_cash_result_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/activity_cash_result_iv1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/activity_cash_result_iv1"
+            android:gravity="center_vertical|left"
+            android:text="申请提现"
+            android:textColor="@color/fragment_item_tag_black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/activity_cash_result_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_cash_result_tv1"
+            android:layout_below="@+id/activity_cash_result_tv1"
+            android:layout_marginTop="5dp"
+            android:text="08-18"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/dark_gray_2"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/activity_cash_result_time2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_cash_result_tv1"
+            android:layout_alignTop="@id/activity_cash_result_iv2"
+            android:layout_below="@+id/activity_cash_result_time1"
+            android:text="等待银行处理"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/fragment_item_tag_black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/activity_cash_result_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activity_cash_result_tv1"
+            android:layout_below="@+id/activity_cash_result_time2_text"
+            android:layout_marginTop="5dp"
+            android:text="08-18"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/dark_gray_2"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/activity_cash_result_tv2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/activity_cash_result_iv3"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/activity_cash_result_iv3"
+            android:gravity="center_vertical|left"
+            android:text="预计18:00前到账"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/activity_cash_result_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_cash_result_tv2_text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/activity_cash_result_iv3"
+            android:gravity="center_vertical|left"
+            android:text="预计18:00前到账"
+            android:textColor="@color/dark_gray_2"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:background="@color/look_details_color"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/look_result"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@drawable/selector_mine"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/hqzc_text_color"-->
+        <!--android:textSize="16dp"-->
+        <!--android:text="去账单查看进度>"/>-->
+
+</LinearLayout>

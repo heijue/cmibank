@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:background="@color/light_gray"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本金(元)"
+                android:textColor="@color/look_details_color"
+
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/activity_invest_detail_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/float_zero"
+                android:textColor="@color/control_text_pressed"
+                android:textSize="26sp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="#d0d0d0"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前收益(元)"
+                android:textColor="@color/look_details_color"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/activity_invest_detail_profit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/float_zero"
+                android:textColor="@color/control_text_pressed"
+                android:textSize="26sp"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="1px"
+            android:layout_height="30dp"
+            android:background="#d0d0d0"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史年化收益率"
+                android:textColor="@color/look_details_color"
+
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/rate_of_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/float_zero"
+                android:textColor="@color/control_text_pressed"
+                android:textSize="26sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activity_invest_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/trans"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

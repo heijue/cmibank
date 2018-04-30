@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/payview_width"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_bg_dialog_white_10"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/dialog_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_close"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/input_pay_pass"
+            android:textColor="#303030"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_red"/>
+
+    <TextView
+        android:id="@+id/dialog_money_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/payview_money_margin_top"
+        android:layout_marginTop="@dimen/payview_money_margin_bottom"
+        android:singleLine="true"
+        android:text="￥100.00"
+        android:textColor="#303030"
+        android:textSize="35sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#d0d0d0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/dialog_bank_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yinhangbeijing"/>
+
+        <TextView
+            android:id="@+id/dialog_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dialog_bank_icon"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#656565"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#d0d0d0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/payview_password_padding_bottom"
+        android:paddingTop="@dimen/payview_password_padding_top">
+
+        <ImageView
+            android:id="@+id/dialog_password_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="-1dp"
+            android:background="@drawable/shape_rect"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/dialog_password_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toRightOf="@+id/dialog_password_1"
+            android:background="@drawable/shape_rect"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/dialog_password_3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toRightOf="@+id/dialog_password_2"
+            android:background="@drawable/shape_rect"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/dialog_password_4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toRightOf="@+id/dialog_password_3"
+            android:background="@drawable/shape_rect"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/dialog_password_5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginRight="-1dp"
+            android:layout_toRightOf="@+id/dialog_password_4"
+            android:background="@drawable/shape_rect"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/dialog_password_6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_toRightOf="@+id/dialog_password_5"
+            android:background="@drawable/shape_rect"
+            android:scaleType="center"/>
+    </RelativeLayout>
+
+</LinearLayout>

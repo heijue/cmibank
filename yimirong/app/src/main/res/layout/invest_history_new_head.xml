@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="110dp"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待收本金(元)"
+            android:textSize="13sp"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/daishou_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="31sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26dp"
+            android:textColor="@color/control_text_pressed"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="1px"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="#cccccc"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预计总收益(元)"
+            android:textSize="13sp"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#666666"/>
+
+        <TextView
+            android:id="@+id/expect_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="31sp"
+            android:textStyle="bold"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26dp"
+            android:textColor="@color/control_text_pressed"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

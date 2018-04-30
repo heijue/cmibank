@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="210dp"
+    android:background="@drawable/shape_dialog">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="提示"/>
+        <TextView
+            android:id="@+id/error_msg_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:lineSpacingMultiplier="1.4"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/control_text_pressed"
+            android:layout_height="1px"/>
+
+        <Button
+            android:id="@+id/error_msg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:text="立即使用"
+            android:textSize="17sp"
+            android:textColor="#0d81f2"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/exp_img_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guanbi_wcg"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"/>
+</RelativeLayout>

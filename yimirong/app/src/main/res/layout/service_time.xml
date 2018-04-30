@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fragment_mine_service_time"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/service_time_content"
+              android:gravity="center"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/kefudianhua_icon"
+        android:drawablePadding="2dp"
+        android:text="客服电话：400-080-5611"
+        android:textColor="@color/control_text_checked"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:text="客服服务时间：每天8:00–20:00"
+        android:textColor="@color/look_details_color"
+        android:textSize="12sp"/>
+
+
+</LinearLayout>

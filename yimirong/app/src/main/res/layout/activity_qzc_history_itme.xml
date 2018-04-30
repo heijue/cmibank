@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_mine"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+
+        <TextView
+            android:id="@+id/activity_qzc_history_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:singleLine="true"
+            android:text="四月宝"
+            android:textColor="#303030"
+            android:textSize="17sp"
+            android:layout_marginTop="14dp"
+             />
+
+        <TextView
+            android:text="2017-08-08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a9a9a9"
+            android:textSize="14sp"
+            android:id="@+id/tv_time"
+            android:layout_below="@+id/activity_qzc_history_item_name"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:id="@+id/activity_qzc_history_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="0.00"
+        android:textColor="@color/control_text_pressed"
+        android:textSize="17sp"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/activity_qzc_history_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="投资总额"
+        android:textColor="#a9a9a9"
+        android:textSize="14sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/activity_qzc_history_item_num"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="14dp"
+         />
+
+</RelativeLayout>

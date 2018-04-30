@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/light_gray"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:id="@+id/wanchen_img"
+            android:src="@drawable/jiaoyichenggong"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/wancheng_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转出成功"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="21dp"
+            android:layout_below="@id/wanchen_img"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/wancheng_num"
+            android:text="成功转出0.00元到账户余额"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/look_details_color"
+            android:textSize="15sp"
+            android:layout_below="@id/wancheng_status"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/look_result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_mine"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/hqzc_text_color"
+        android:textSize="16dp"
+        android:text="去账单查看进度>"/>
+
+
+    <!--<RelativeLayout android:layout_width="match_parent" android:layout_height="58dp" android:paddingBottom="8dp" android:paddingLeft="13dp" android:paddingRight="13dp" android:paddingTop="8dp">-->
+
+    <!--<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:gravity="left" android:orientation="vertical">-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_detail_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="left" android:text="@string/zhuanchu_to_account_yue" android:textColor="@color/black" android:textSize="16sp"/>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_detail_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="left" android:layout_marginTop="3dp" android:textColor="#a6a6a6" android:textSize="12sp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_detail_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:drawablePadding="10dp" android:textColor="#ff6600" android:textSize="16sp"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="13dp" android:background="@color/dark_gray"/>-->
+
+    <!--<RelativeLayout android:id="@+id/activity_khb_zc_detail_bank" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/white" android:paddingBottom="19dp" android:paddingLeft="13dp" android:paddingRight="13dp" android:paddingTop="19dp" android:visibility="gone">-->
+
+    <!--<ImageView android:id="@+id/activity_khb_zc_result_iv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/image_content" android:src="@drawable/duihao_yuan_lu"/>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_result_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/activity_khb_zc_result_iv1" android:layout_alignTop="@+id/activity_khb_zc_result_iv1" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/activity_khb_zc_result_iv1" android:gravity="center_vertical|left" android:text="@string/submit_zhuanchu_shenqing" android:textColor="@color/black" android:textSize="17sp"/>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_result_banknum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/activity_khb_zc_result_tv1" android:layout_below="@+id/activity_khb_zc_result_tv1" android:gravity="center_vertical|left" android:textColor="#9c9c9c" android:textSize="15sp"/>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_result_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/activity_khb_zc_result_banknum" android:layout_below="@+id/activity_khb_zc_result_banknum" android:gravity="center_vertical|left" android:textColor="#9c9c9c" android:textSize="15sp"/>-->
+
+    <!--<RelativeLayout android:id="@+id/activity_khb_zc_result_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/activity_khb_zc_result_iv1" android:layout_alignRight="@+id/activity_khb_zc_result_iv1" android:layout_below="@+id/activity_khb_zc_result_iv1" android:background="@color/white">-->
+
+    <!--<View android:id="@+id/activity_khb_zc_result_view1" android:layout_width="3dp" android:layout_height="24dp" android:layout_centerInParent="true" android:background="#4ec42e"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout android:id="@+id/activity_khb_zc_result_line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/activity_khb_zc_result_line1" android:layout_alignRight="@+id/activity_khb_zc_result_line1" android:layout_below="@+id/activity_khb_zc_result_line1" android:background="@color/white">-->
+
+    <!--<View android:id="@+id/activity_khb_zc_result_view2" android:layout_width="3dp" android:layout_height="24dp" android:layout_centerInParent="true" android:background="#4ec42e"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<ImageView android:id="@+id/activity_khb_zc_result_iv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/activity_khb_zc_result_line2" android:contentDescription="@string/image_content" android:src="@drawable/qian_yuan_lu"/>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_result_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/activity_khb_zc_result_iv2" android:layout_alignTop="@+id/activity_khb_zc_result_iv2" android:layout_marginLeft="10dp" android:layout_toRightOf="@+id/activity_khb_zc_result_iv2" android:gravity="center_vertical|left" android:text="@string/daozhang_shijian" android:textColor="@color/black" android:textSize="17sp"/>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_result_startprofit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/activity_khb_zc_result_tv1" android:layout_below="@+id/activity_khb_zc_result_tv2" android:textColor="#9c9c9c" android:textSize="15sp"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout android:id="@+id/activity_khb_zc_detail_yue" android:layout_width="match_parent" android:layout_height="74dp" android:background="@color/white" android:paddingLeft="13dp" android:paddingRight="13dp" android:visibility="visible">-->
+
+    <!--<ImageView android:id="@+id/activity_khb_zc_detail_yue_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/activity_khb_zc_detail_yue_info" android:layout_alignParentLeft="true" android:layout_alignTop="@+id/activity_khb_zc_detail_yue_info" android:contentDescription="@string/image_content" android:src="@drawable/duihao_yuan_lu"/>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_detail_yue_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="18dp" android:layout_toRightOf="@+id/activity_khb_zc_detail_yue_iv" android:text="@string/zhuanchu_to_yue_success" android:textColor="@color/black" android:textSize="17sp"/>-->
+
+    <!--<TextView android:id="@+id/activity_khb_zc_detail_yue_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/activity_khb_zc_detail_yue_info" android:layout_below="@+id/activity_khb_zc_detail_yue_info" android:textColor="#9c9c9c" android:textSize="15sp"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/dark_gray" android:layout_marginLeft="13dp"/>-->
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="345dp"
+              android:layout_height="200dp"
+              android:background="@drawable/shape_bg_dialog_white_10">
+
+
+    <TextView
+        android:id="@+id/dialog_pay_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="充值失败"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:background="@color/line_color"/>
+
+    <TextView
+        android:id="@+id/dialog_pay_error_other"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_text_bottom_bg"
+        android:gravity="center"
+        android:textColor="@color/pay_error"
+        android:textSize="16sp"
+        android:text="尝试其他充值通道"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:background="@color/line_color"/>
+
+
+    <LinearLayout
+        android:id="@+id/dialog_pay_error_kefu"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_bg_white"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pay_error"
+            android:textSize="16sp"
+            android:text="联系客服"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="工作日8:00-20:00"
+            android:textColor="#808080"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:background="@color/line_color"/>
+
+    <TextView
+        android:id="@+id/dialog_pay_error_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_text_bottom_bg"
+        android:gravity="center"
+        android:textColor="#0d81f1"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:text="关闭"/>
+
+</LinearLayout>

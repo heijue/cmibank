@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="290dp"
+                android:layout_height="150dp"
+                android:background="@drawable/shape_dialog">
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="您是否想通过手机短信验证码重置密码？"
+        android:textSize="17sp"/>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_chongzhi_info_cancel"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="取消"
+            android:textSize="17sp"
+            android:textColor="@color/control_text_pressed"
+            android:background="@null"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="0.45dp"
+            android:layout_height="45dp"
+            android:background="@color/gray"/>
+
+        <Button
+            android:id="@+id/dialog_chongzhi_info_ok"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="确定"
+            android:textSize="17sp"
+            android:textColor="@color/control_text_pressed"
+            android:background="@null"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_above="@id/btn_layout"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="0.45dp"/>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tishi"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

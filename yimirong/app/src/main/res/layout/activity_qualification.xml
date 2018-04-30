@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/light_gray"
+    tools:context="cn.app.yimirong.activity.QualificationActivity">
+
+    <include layout="@layout/title_bar"
+        android:id="@+id/title_bar"/>
+
+    <TextView
+        android:layout_below="@id/title_bar"
+        android:id="@+id/qualification_text"
+        android:layout_width="match_parent"
+        android:text="公司资质相关资料："
+        android:paddingLeft="12dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_height="60dp"/>
+
+    <ListView
+        android:layout_below="@id/qualification_text"
+        android:id="@+id/image_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"/>
+
+</RelativeLayout>

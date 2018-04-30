@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:background="@color/light_gray"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <cn.app.yimirong.view.pull.PullToRefreshLayout
+        android:id="@+id/activity_buy_record_refresher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head"/>
+
+        <cn.app.yimirong.view.pull.PullableListView
+            android:id="@+id/activity_buy_record_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="#dedfe0"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"/>
+
+        <include
+            layout="@layout/load_more"
+            android:visibility="gone"/>
+    </cn.app.yimirong.view.pull.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/goumaijilu_kong_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/goujilui_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="没事常来赚赚吧！"
+            android:textColor="#666666"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/goujilui_text"
+            android:src="@drawable/goumaijilu_kong"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

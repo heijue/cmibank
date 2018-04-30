@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/selector_mine"
+                android:paddingBottom="8dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_khb_logs_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+          <ImageView
+              android:id="@+id/img_goumai"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/goumai"
+              android:layout_marginTop="3dp"
+              />
+        <TextView
+            android:id="@+id/activity_khb_logs_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#a6a6a6"
+            android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_khb_logs_item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="+3000.00"
+        android:textColor="#449900"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/activity_khb_logs_item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/activity_khb_logs_item_money"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="交易成功"
+        android:textColor="#999999"
+        android:textSize="13sp"/>
+    <ImageView
+        android:id="@+id/tv_right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/next"
+        />
+
+</RelativeLayout>

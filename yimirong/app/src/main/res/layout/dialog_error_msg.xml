@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="300dp"
+              android:layout_height="130dp"
+    android:background="@drawable/shape_dialog">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tishi"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/error_msg_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="验证码不正确，请重新输入"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/control_text_pressed"
+        android:layout_height="1px"/>
+
+    <Button
+        android:id="@+id/error_msg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:text="确定"
+        android:textSize="18sp"
+        android:textColor="#0d81f2"/>
+
+</LinearLayout>

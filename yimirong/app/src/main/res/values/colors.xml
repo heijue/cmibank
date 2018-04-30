@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="dark_gray">#ffd9d9d9</color>
+    <color name="dark_gray_2">#666666</color>
+    <color name="gray">#ffaaaaaa</color>
+    <color name="light_blue">#ff427fed</color>
+    <color name="light_gray">#ebebeb</color>
+    <color name="light_red">#fffe5720</color>
+    <color name="line_color">@color/dark_gray</color>
+    <color name="red">#ffff0000</color>
+    <color name="refresh_blue">#ff375bf1</color>
+    <color name="refresh_green">#ff34a350</color>
+    <color name="refresh_yellow">#fff7d23e</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="trans">@color/transparent</color>
+    <color name="translucent">#50000000</color>
+    <color name="pay_error">#ff4747</color>
+    <color name="control_text_checked">#EB515E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="profit">#808080</color>
+    <color name="keyong_selector_color">#f5f5f5</color>
+    <color name="look_details_color">#666666</color>
+    <color name="control_text_defult">#5B5B5B</color>
+    <color name="reset_color">#f5f5f5</color>
+    <color name="fomat_color">#ffd3d1</color>
+    <color name="fomat_text_color">#df1a1a</color>
+    <color name="hqzc_text_color">#0c82f0</color>
+    <color name="bottom_line">#dedede</color>
+
+    <color name="control_text_pressed">#eb515e</color>
+    <color name="fragment_item_tag_yello">#FDBB08</color>
+    <color name="fragment_item_tag_black">#333333</color>
+    <color name="chart1">#fdb128</color>
+    <color name="chart2">#f46950</color>
+    <color name="chart3">#1dac91</color>
+    <color name="chart4">#8ac832</color>
+    <color name="chart5">#4c68de</color>
+    <color name="bind_text_color_blue">#FF1282F1</color>
+    <color name="bind_text_color_gray">#a4a4a5</color>
+    <color name="colorPrimary">#ffd9d9d9</color>
+    <color name="main_color">#f5f5f5</color>
+</resources>

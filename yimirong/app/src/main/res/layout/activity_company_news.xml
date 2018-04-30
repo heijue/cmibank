@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/light_gray"
+    tools:context="cn.app.yimirong.activity.CompanyNewsActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <cn.app.yimirong.view.pull.PullToRefreshLayout
+        android:id="@+id/activity_action_list_pullable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <include layout="@layout/refresh_head"/>
+
+        <cn.app.yimirong.view.pull.PullableListView
+            android:id="@+id/news_comlistview"
+            android:divider="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <include layout="@layout/load_more"/>
+
+    </cn.app.yimirong.view.pull.PullToRefreshLayout>
+
+</LinearLayout>

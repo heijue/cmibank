@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/shouyizhushou_icon"
+        android:text="收益小助手"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/layout_anquan_profit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:singleLine="true"
+        android:text="投资100000.00元，30天最多赚取元"
+        android:gravity="center"
+        android:textColor="#666666"
+        android:textSize="13sp"/>
+
+
+        <SeekBar
+            android:id="@+id/fragment_anquan_seekbar"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="25dp"
+            android:max="90"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="9dp"
+            android:minHeight="9dp"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/huadonganniu"
+
+            />
+
+
+
+
+</LinearLayout>

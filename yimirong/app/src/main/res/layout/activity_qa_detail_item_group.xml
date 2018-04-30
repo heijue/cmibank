@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_mine"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/activity_qa_detail_item_group_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@string/image_content"
+        android:src="@drawable/xiala"/>
+
+
+    <TextView
+        android:id="@+id/activity_qa_detail_item_group_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="adasdasd"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"/>
+
+
+</LinearLayout>
